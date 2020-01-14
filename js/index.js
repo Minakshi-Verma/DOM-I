@@ -56,14 +56,14 @@ nav_a[5].textContent = "Contact";
 //Utilize`.appendChild()` to add item to navigation
 
 const new_a = document.createElement('a')
-new_a.textContent = "lastChild"
+new_a.textContent = "LastChild"
 document.querySelector("nav").appendChild(new_a)
 new_a.style.color = "green"
 
 
 //Utilize `.prepend()` to add an item to the navigation
 const first_a = document.createElement('a')
-first_a.textContent = "firstChild"
+first_a.textContent = "FirstChild"
 document.querySelector("nav").prepend(first_a)
 first_a.style.color = "green"
 
