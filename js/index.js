@@ -58,12 +58,14 @@ nav_a[5].textContent = "Contact";
 const new_a = document.createElement('a')
 new_a.textContent = "lastChild"
 document.querySelector("nav").appendChild(new_a)
+new_a.style.color = "green"
 
 
 //Utilize `.prepend()` to add an item to the navigation
 const first_a = document.createElement('a')
 first_a.textContent = "firstChild"
 document.querySelector("nav").prepend(first_a)
+first_a.style.color = "green"
 
 //Change the color of the navigation text to be green.
 
