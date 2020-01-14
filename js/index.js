@@ -42,13 +42,6 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-
-
-
-
-
-
-
 //styling of nav items
 const nav_a = document.querySelectorAll("a")
 nav_a[0].textContent = "Services";
@@ -58,19 +51,25 @@ nav_a[3].textContent = "Features";
 nav_a[4].textContent = "About";
 nav_a[5].textContent = "Contact";
 
+
+
+//Utilize`.appendChild()` to add item to navigation
+
+const new_a = document.createElement('a')
+new_a.textContent = "lastChild"
+document.querySelector("nav").appendChild(new_a)
+
+
+//Utilize `.prepend()` to add an item to the navigation
+const first_a = document.createElement('a')
+first_a.textContent = "firstChild"
+document.querySelector("nav").prepend(first_a)
+
 //Change the color of the navigation text to be green.
 
 nav_a.forEach(a=>{
   a.style.color = 'green'
 })
-
-//Utilize`.appendChild()` to add item to navigation
-
-// document.createElement('a')
-// nav.appendChild('a')
-
-
-//Utilize `.prepend()` to add an item to the navigation
 
 
 
